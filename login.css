@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+    background-image: url(kenya-mumias-district-mumias-sugar-cane-collection-at-mumias-B34NKT.jpg);
+    height: 100vh;
+    font-family: 'Arial', sans-serif; 
+    box-sizing: border-box;
+    outline: none;
+
+}
+.login-form{
+    margin: 20px auto ;
+    max-height: 650px;
+    height: 100%;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+    
+    background: linear-gradient(to bottom, rgba(183, 226, 226, 0.8), rgba(0, 0, 0, 0.5)); 
+
+    border-radius:8px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid;
+    border-width: 1px;
+    border-color: gray;
+    flex-direction: column;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+
+
+}
+.title-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+    font-weight:bold;
+    color: yellow;
+}
+label{
+    color:yellow;
+    font-size: 20px;
+    text-align: start;
+}
+.submit-button{
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    display: block;
+    height: 40px;
+    width:100% ;
+    max-width:100px ;
+    border-radius: 8px;
+   /* background-color:rgba(0, 0, 0, 0.459) ;*/
+
+    background-color: rgba(61, 102, 102, 0.8);
+    color: yellow;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition:color 0.8s ease,tranform 0.5s ease;
+    z-index: 2;
+}
+.submit-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);   
+    transition: left 0.5s ease; 
+
+    z-index: 0; 
+}
+.submit-button:hover::before{
+    left:0;
+}
+
+
+.submit-button:hover{
+        
+       color: white;
+        background-color: rgba(0, 0, 0, 0.9);
+        transform: translateX(10px) scale(1.1);
+       
+    }
+    .submit-button:active{
+        background-color: red;
+        
+        
+    }
+
+
+    .submit-button:focus {
+        outline: none; 
+        box-shadow: 0 0 5px rgba(61, 102, 102, 0.8); 
+        border: 1px solid rgba(61, 102, 102, 0.8);
+    }
+
+.contact-input{
+    padding: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 330px;
+    background: rgb(204, 197, 197 ,0.5); 
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc; 
+    cursor: pointer; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+     transition: 0.5s ease-in-out ;
+
+}
+.contact-input:focus{
+   outline: none; 
+    border-color: rgba(61, 102, 102, 0.8); 
+    box-shadow: 0 0 5px rgba(61, 102, 102, 0.8); 
+
+
+}
+.contact-input:hover{
+    transform: scale(1.2);
+    transition: 0.5s ;
+}
+
+
+
+.contact-input::placeholder{
+   color: rgba(0, 0, 0, 0.5); 
+    opacity: 1; 
+}
+
+.contact-list{
+    margin: 0 auto;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: center;
+align-items: center;
+text-align: start;
+background: linear-gradient(to bottom, rgba(183, 226, 226, 0.8), rgba(0, 0, 0, 0.5)); 
+border-radius:8px ;
+color: rgb(255, 255, 0);
+width:100%;
+max-width:700px;
+border-radius: 2px;
+padding: 10px;
+}
